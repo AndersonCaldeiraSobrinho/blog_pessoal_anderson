@@ -1,0 +1,94 @@
+.rodape {
+    background-color: $claro;
+    width: 100vw;
+    height: 100vh;
+    //overflow: hidden;
+    .bloco_1 {
+        background-color: $claro;
+        width: 100vw;
+        height: 20vh;
+    }
+    .bloco_2 {
+        background-color: $claro;
+        width: 100vw;
+        height: 80vh;
+        //overflow: hidden;
+        .predios_linha_1 {
+            .predio {
+                z-index: 4;
+            }
+           .predio_1 {
+            background-color: $escuro;
+            width: 1em;
+            height: 3em;
+           }
+           .predio_2 {
+            background-color: $escuro;
+            width: 1.5em;
+            height: 2em;
+           }
+           .predio_3 {
+            background-color: $escuro;
+            width: 2.5em;
+            height: 0.8em;
+           }
+           .predio_4 {
+            background-color: $escuro;
+            width: 6em;
+            height: 12em;
+           }
+           .predio_5 {
+            background-color: $escuro;
+            width: 7em;
+            height: 5em;
+           }
+           .predio_6 {
+            background-color: $escuro;
+            width: 3em;
+            height: 6em;
+           }
+           .predio_7 {
+            background-color: $escuro;
+            width: 6em;
+            height: 4em;
+           }
+        }
+        .base {
+            background-color: $escuro;
+            width: 100vw;
+            height: 40vh;
+            position: relative;
+            top: 27vh;
+            left: 0;
+            z-index: 3;
+        }
+    }
+}
+
+.predio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.janela_1 {
+    background-color: $claro;
+    width: 5px;
+    height: 5px;
+    margin: 2.5px;
+}
+
+.janela_2 {
+    background-color: $claro;
+    width: 3px;
+    height: 3px;
+    margin: 1.5px;
+}
+
+.janela_3 {
+    background-color: $claro;
+    width: 2px;
+    height: 2px;
+    margin: 1px;
+}

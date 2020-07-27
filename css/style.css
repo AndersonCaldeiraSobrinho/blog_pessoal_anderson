@@ -6443,5 +6443,92 @@ input[type=range]::-ms-thumb {
     bottom: auto;
     text-align: center;
     margin-top: 1.2rem; } }
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.cabecalho {
+  background-color: #660066;
+  width: 100vw;
+  height: 100vh; }
+
+.principal {
+  background-color: #7f7f7f;
+  width: 100vw;
+  height: 100vh; }
+
+.rodape {
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh; }
+  .rodape .bloco_1 {
+    background-color: #ffffff;
+    width: 100vw;
+    height: 20vh; }
+  .rodape .bloco_2 {
+    background-color: #ffffff;
+    width: 100vw;
+    height: 80vh; }
+    .rodape .bloco_2 .predios_linha_1 .predio {
+      z-index: 4; }
+    .rodape .bloco_2 .predios_linha_1 .predio_1 {
+      background-color: #000000;
+      width: 1em;
+      height: 3em; }
+    .rodape .bloco_2 .predios_linha_1 .predio_2 {
+      background-color: #000000;
+      width: 1.5em;
+      height: 2em; }
+    .rodape .bloco_2 .predios_linha_1 .predio_3 {
+      background-color: #000000;
+      width: 2.5em;
+      height: 0.8em; }
+    .rodape .bloco_2 .predios_linha_1 .predio_4 {
+      background-color: #000000;
+      width: 6em;
+      height: 12em; }
+    .rodape .bloco_2 .predios_linha_1 .predio_5 {
+      background-color: #000000;
+      width: 7em;
+      height: 5em; }
+    .rodape .bloco_2 .predios_linha_1 .predio_6 {
+      background-color: #000000;
+      width: 3em;
+      height: 6em; }
+    .rodape .bloco_2 .predios_linha_1 .predio_7 {
+      background-color: #000000;
+      width: 6em;
+      height: 4em; }
+    .rodape .bloco_2 .base {
+      background-color: #000000;
+      width: 100vw;
+      height: 40vh;
+      position: relative;
+      top: 27vh;
+      left: 0;
+      z-index: 3; }
+
+.predio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden; }
+
+.janela_1 {
+  background-color: #ffffff;
+  width: 5px;
+  height: 5px;
+  margin: 2.5px; }
+
+.janela_2 {
+  background-color: #ffffff;
+  width: 3px;
+  height: 3px;
+  margin: 1.5px; }
+
+.janela_3 {
+  background-color: #ffffff;
+  width: 2px;
+  height: 2px;
+  margin: 1px; }
 
 /*# sourceMappingURL=style.css.map */
