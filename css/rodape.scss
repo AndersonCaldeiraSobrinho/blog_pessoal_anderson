@@ -13,44 +13,171 @@
         width: 100vw;
         height: 80vh;
         //overflow: hidden;
+        .predios_linha_3 {
+            .predio {
+                z-index: 1;
+            }
+           .predio_1 {
+            background-color: $cor-sec;
+            width: 2em;
+            height: 4em;
+           }
+           .predio_2 {
+            background-color: $cor-sec;
+            width: 1.5em;
+            height: 5em;
+           }
+           .predio_3 {
+            background-color: $cor-sec;
+            width: 2.5em;
+            height: 8em;
+           }
+           .predio_4 {
+            background-color: $cor-sec;
+            width: 3em;
+            height: 7em;
+           }
+           .predio_5 {
+            background-color: $cor-sec;
+            width: 7em;
+            height: 5em;
+           }
+           .predio_6 {
+            background-color: $cor-sec;
+            width: 3em;
+            height: 6em;
+           }
+           .predio_7 {
+            background-color: $cor-sec;
+            width: 6em;
+            height: 4em;
+           }
+           .predio_8 {
+            background-color: $cor-sec;
+            width: 6em;
+            height: 4em;
+           }
+        }
+        .predios_linha_2 {
+            .predio {
+                z-index: 2;
+            }
+           .predio_1 {
+            background-color: $cor-princ;
+            width: 2em;
+            height: 4em;
+            position: relative;
+            top: 84vh;
+            left: 17vw;
+           }
+           .predio_2 {
+            background-color: $cor-princ;
+            width: 1.5em;
+            height: 5em;
+            position: relative;
+            top: 84vh;
+            left: 17vw;
+           }
+           .predio_3 {
+            background-color: $cor-princ;
+            width: 2.5em;
+            height: 8em;
+            position: relative;
+            top: 84vh;
+            left: 17vw;
+           }
+           .predio_4 {
+            background-color: $cor-princ;
+            width: 3em;
+            height: 7em;
+            position: relative;
+            top: 84vh;
+            left: 17vw;
+           }
+           .predio_5 {
+            background-color: $cor-princ;
+            width: 7em;
+            height: 5em;
+            position: relative;
+            top: 84vh;
+            left: 17vw;
+           }
+           .predio_6 {
+            background-color: $cor-princ;
+            width: 3em;
+            height: 6em;
+            position: relative;
+            top: 84vh;
+            left: 17vw;
+           }
+           .predio_7 {
+            background-color: $cor-princ;
+            width: 6em;
+            height: 4em;
+            position: relative;
+            top: 84vh;
+            left: 17vw;
+           }
+        }
         .predios_linha_1 {
             .predio {
                 z-index: 4;
             }
            .predio_1 {
             background-color: $escuro;
-            width: 1em;
-            height: 3em;
+            width: 2em;
+            height: 4em;
+            position: relative;
+            top: 113vh;
+            left: 2vw;
            }
            .predio_2 {
             background-color: $escuro;
             width: 1.5em;
-            height: 2em;
+            height: 5em;position: relative;
+            top: 101vh;
+            left: 10vw;
+
            }
            .predio_3 {
             background-color: $escuro;
             width: 2.5em;
-            height: 0.8em;
+            height: 8em;
+            position: relative;
+            top: 84vh;
+            left: 17vw;
            }
            .predio_4 {
             background-color: $escuro;
-            width: 6em;
-            height: 12em;
+            width: 5em;
+            height: 7em;
+            position: relative;
+            top: 68vh;
+            left: 28vw;
            }
            .predio_5 {
             background-color: $escuro;
-            width: 7em;
+            width: 3em;
             height: 5em;
+            position: relative;
+            top: 55vh;
+            left: 49vw;
            }
            .predio_6 {
             background-color: $escuro;
             width: 3em;
             height: 6em;
+            position: relative;
+            top: 39vh;
+            left: 65vw;
            }
            .predio_7 {
             background-color: $escuro;
             width: 6em;
             height: 4em;
+            position: relative;
+            top: 28vh;
+            left: 80vw;
            }
         }
         .base {
@@ -68,6 +195,7 @@
 .predio {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
     overflow: hidden;
 }
