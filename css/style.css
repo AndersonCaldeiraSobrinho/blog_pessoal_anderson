@@ -1,3 +1,50 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -6457,145 +6504,159 @@ body {
   height: 100vh; }
 
 .rodape {
-  background-color: #ffffff;
-  width: 100vw;
-  height: 100vh; }
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; }
   .rodape .bloco_1 {
     background-color: #ffffff;
     width: 100vw;
-    height: 20vh; }
+    height: 20vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; }
+    .rodape .bloco_1 h3 a img {
+      height: 15vh;
+      border-radius: 5px;
+      margin-left: 10px; }
   .rodape .bloco_2 {
     background-color: #ffffff;
     width: 100vw;
-    height: 80vh; }
-    .rodape .bloco_2 .predios_linha_3 .predio {
-      z-index: 1; }
-    .rodape .bloco_2 .predios_linha_3 .predio_1 {
-      background-color: #7f7f7f;
-      width: 2em;
-      height: 4em; }
-    .rodape .bloco_2 .predios_linha_3 .predio_2 {
-      background-color: #7f7f7f;
-      width: 1.5em;
-      height: 5em; }
-    .rodape .bloco_2 .predios_linha_3 .predio_3 {
-      background-color: #7f7f7f;
-      width: 2.5em;
-      height: 8em; }
-    .rodape .bloco_2 .predios_linha_3 .predio_4 {
-      background-color: #7f7f7f;
-      width: 3em;
-      height: 7em; }
-    .rodape .bloco_2 .predios_linha_3 .predio_5 {
-      background-color: #7f7f7f;
-      width: 7em;
-      height: 5em; }
-    .rodape .bloco_2 .predios_linha_3 .predio_6 {
-      background-color: #7f7f7f;
-      width: 3em;
-      height: 6em; }
-    .rodape .bloco_2 .predios_linha_3 .predio_7 {
-      background-color: #7f7f7f;
-      width: 6em;
-      height: 4em; }
-    .rodape .bloco_2 .predios_linha_3 .predio_8 {
-      background-color: #7f7f7f;
-      width: 6em;
-      height: 4em; }
-    .rodape .bloco_2 .predios_linha_2 .predio {
-      z-index: 2; }
-    .rodape .bloco_2 .predios_linha_2 .predio_1 {
-      background-color: #660066;
-      width: 2em;
-      height: 4em; }
-    .rodape .bloco_2 .predios_linha_2 .predio_2 {
-      background-color: #660066;
-      width: 1.5em;
-      height: 5em; }
-    .rodape .bloco_2 .predios_linha_2 .predio_3 {
-      background-color: #660066;
-      width: 2.5em;
-      height: 8em; }
-    .rodape .bloco_2 .predios_linha_2 .predio_4 {
-      background-color: #660066;
-      width: 3em;
-      height: 7em; }
-    .rodape .bloco_2 .predios_linha_2 .predio_5 {
-      background-color: #660066;
-      width: 7em;
-      height: 5em; }
-    .rodape .bloco_2 .predios_linha_2 .predio_6 {
-      background-color: #660066;
-      width: 3em;
-      height: 6em; }
-    .rodape .bloco_2 .predios_linha_2 .predio_7 {
-      background-color: #660066;
-      width: 6em;
-      height: 4em; }
-    .rodape .bloco_2 .predios_linha_1 .predio {
-      z-index: 4; }
-    .rodape .bloco_2 .predios_linha_1 .predio_1 {
-      background-color: #000000;
-      width: 2em;
-      height: 4em;
+    height: 80vh;
+    overflow: hidden; }
+    .rodape .bloco_2 .predios_linha_3 {
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end; }
+      .rodape .bloco_2 .predios_linha_3 .predio {
+        z-index: 1; }
+      .rodape .bloco_2 .predios_linha_3 .predio_1 {
+        background-color: #7f7f7f;
+        width: 2em;
+        height: 60vh; }
+      .rodape .bloco_2 .predios_linha_3 .predio_2 {
+        background-color: #7f7f7f;
+        width: 1.5em;
+        height: 60vh; }
+      .rodape .bloco_2 .predios_linha_3 .predio_3 {
+        background-color: #7f7f7f;
+        width: 2.5em;
+        height: 48vh; }
+      .rodape .bloco_2 .predios_linha_3 .predio_4 {
+        background-color: #7f7f7f;
+        width: 3em;
+        height: 55vh; }
+      .rodape .bloco_2 .predios_linha_3 .predio_5 {
+        background-color: #7f7f7f;
+        width: 2.2em;
+        height: 52vh; }
+      .rodape .bloco_2 .predios_linha_3 .predio_6 {
+        background-color: #7f7f7f;
+        width: 4em;
+        height: 60vh; }
+      .rodape .bloco_2 .predios_linha_3 .predio_7 {
+        background-color: #7f7f7f;
+        width: 3em;
+        height: 60vh; }
+      .rodape .bloco_2 .predios_linha_3 .predio_8 {
+        background-color: #7f7f7f;
+        width: 3em;
+        height: 55vh; }
+    .rodape .bloco_2 .predios_linha_2 {
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
       position: relative;
-      top: 113vh;
-      left: 2vw; }
-    .rodape .bloco_2 .predios_linha_1 .predio_2 {
-      background-color: #000000;
-      width: 1.5em;
-      height: 5em;
+      top: -38vh;
+      left: 0; }
+      .rodape .bloco_2 .predios_linha_2 .predio {
+        z-index: 2; }
+      .rodape .bloco_2 .predios_linha_2 .predio_1 {
+        background-color: #660066;
+        width: 3em;
+        height: 28vh; }
+      .rodape .bloco_2 .predios_linha_2 .predio_2 {
+        background-color: #660066;
+        width: 1.5em;
+        height: 38vh; }
+      .rodape .bloco_2 .predios_linha_2 .predio_3 {
+        background-color: #660066;
+        width: 2.5em;
+        height: 35vh; }
+      .rodape .bloco_2 .predios_linha_2 .predio_4 {
+        background-color: #660066;
+        width: 3em;
+        height: 24vh; }
+      .rodape .bloco_2 .predios_linha_2 .predio_5 {
+        background-color: #660066;
+        width: 4em;
+        height: 28vh; }
+      .rodape .bloco_2 .predios_linha_2 .predio_6 {
+        background-color: #660066;
+        width: 4em;
+        height: 21vh; }
+      .rodape .bloco_2 .predios_linha_2 .predio_7 {
+        background-color: #660066;
+        width: 5em;
+        height: 22vh; }
+    .rodape .bloco_2 .predios_linha_1 {
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
       position: relative;
-      top: 101vh;
-      left: 10vw; }
-    .rodape .bloco_2 .predios_linha_1 .predio_3 {
-      background-color: #000000;
-      width: 2.5em;
-      height: 8em;
-      position: relative;
-      top: 84vh;
-      left: 17vw; }
-    .rodape .bloco_2 .predios_linha_1 .predio_4 {
-      background-color: #000000;
-      width: 5em;
-      height: 7em;
-      position: relative;
-      top: 68vh;
-      left: 28vw; }
-    .rodape .bloco_2 .predios_linha_1 .predio_5 {
-      background-color: #000000;
-      width: 3em;
-      height: 5em;
-      position: relative;
-      top: 55vh;
-      left: 49vw; }
-    .rodape .bloco_2 .predios_linha_1 .predio_6 {
-      background-color: #000000;
-      width: 3em;
-      height: 6em;
-      position: relative;
-      top: 39vh;
-      left: 65vw; }
-    .rodape .bloco_2 .predios_linha_1 .predio_7 {
-      background-color: #000000;
-      width: 6em;
-      height: 4em;
-      position: relative;
-      top: 28vh;
-      left: 80vw; }
+      top: -53vh;
+      left: 0; }
+      .rodape .bloco_2 .predios_linha_1 .predio {
+        z-index: 4; }
+      .rodape .bloco_2 .predios_linha_1 .predio_1 {
+        background-color: #000000;
+        width: 2em;
+        height: 10vh; }
+      .rodape .bloco_2 .predios_linha_1 .predio_2 {
+        background-color: #000000;
+        width: 1.5em;
+        height: 12vh; }
+      .rodape .bloco_2 .predios_linha_1 .predio_3 {
+        background-color: #000000;
+        width: 2.5em;
+        height: 15vh; }
+      .rodape .bloco_2 .predios_linha_1 .predio_4 {
+        background-color: #000000;
+        width: 5em;
+        height: 13vh; }
+      .rodape .bloco_2 .predios_linha_1 .predio_5 {
+        background-color: #000000;
+        width: 3em;
+        height: 10vh; }
+      .rodape .bloco_2 .predios_linha_1 .predio_6 {
+        background-color: #000000;
+        width: 3em;
+        height: 8vh; }
+      .rodape .bloco_2 .predios_linha_1 .predio_7 {
+        background-color: #000000;
+        width: 6em;
+        height: 6vh; }
     .rodape .bloco_2 .base {
       background-color: #000000;
       width: 100vw;
-      height: 40vh;
+      height: 20vh;
+      z-index: 3;
       position: relative;
-      top: 27vh;
-      left: 0;
-      z-index: 3; }
+      top: -53vh;
+      left: 0; }
 
 .predio {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-content: flex-start;
   flex-wrap: wrap;
   overflow: hidden; }
 
